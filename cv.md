@@ -1,6 +1,6 @@
 # Nikolai Murtazin
 
-<img src="images/NikolaiMurtazin.jpg" width="150" alt="Nikolai Murtazin">
+<img src="img/NikolaiMurtazin.jpg" width="150" alt="Nikolai Murtazin">
 
 ---
 
