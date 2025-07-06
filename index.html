@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Nikolai's CV</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="icon" href="assets/favicon.ico">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<nav class="nav">
+					<ul class="nav-list">
+						<li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+						<li class="nav-item"><a href="#about-me" class="nav-link">About me</a></li>
+						<li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+						<li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+						<li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+						<li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+						<li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main class="main main-container">
+			<div class="container">
+				<!--  Profile-->
+				<section class="section" id="profile">
+					<h1 class="section-title">Nikolai Murtazin</h1>
+					<img class="profile-photo" src="assets/img/NikolaiMurtazin.jpg" alt="Nikolai Murtazin">
+				</section>
+
+				<!-- Contacts -->
+				<section class="section" id="contacts">
+					<h2 class="section-title">Contacts</h2>
+					<ul class="section-list">
+						<li class="section-item">
+							Email:
+							<a href="mailto:murtazinnikolai@gmail.com" class="section-link" target="_blank"
+							   rel="noopener noreferrer">
+								murtazinnikolai@gmail.com
+							</a>
+						</li>
+						<li class="section-item">
+							Github:
+							<a href="https://github.com/NikolaiMurtazin" class="section-link" target="_blank"
+							   rel="noopener noreferrer">
+								github.com/NikolaiMurtazin
+							</a>
+						</li>
+						<li class="section-item">
+							LinkedIn:
+							<a href="https://www.linkedin.com/in/nikolai-murtazin" class="section-link" target="_blank"
+							   rel="noopener noreferrer">
+								linkedin.com/in/NikolaiMurtazin
+							</a>
+						</li>
+						<li class="section-item">
+							Discord: nikolaimurtazin
+						</li>
+						<li class="section-item">
+							Telegram:
+							<a href="https://t.me/NikolaiMurtazin" class="section-link" target="_blank"
+							   rel="noopener noreferrer">
+								@NikolaiMurtazin
+							</a>
+						</li>
+					</ul>
+				</section>
+
+				<!-- ABOUT ME -->
+				<section class="section" id="about-me">
+					<h2 class="section-title">About Me</h2>
+					<p class="section-text">
+						Highly motivated and results-driven aspiring Software Developer with a solid foundation in
+						backend development (Java, Spring Boot, Microservices) and a keen interest in expanding into
+						frontend technologies. My goal is to leverage analytical skills and a strong passion for
+						continuous learning to build robust, scalable, and user-friendly applications. I am a proactive
+						problem-solver, committed to writing clean, efficient code, and thrive in collaborative
+						environments. Eager to apply my existing knowledge and quickly master new tools and frameworks
+						to contribute effectively to innovative projects.
+					</p>
+				</section>
+
+				<!-- SKILLS -->
+				<section class="section" id="skills">
+					<h2 class="section-title">Skills</h2>
+					<ul class="section-list">
+						<li><strong>Languages:</strong> Java, HTML5, CSS3</li>
+						<li><strong>Backend Technologies:</strong> Spring, Hibernate, SQL, Maven, Rest, gRPC,
+							Microservices
+						</li>
+						<li><strong>Version Control:</strong> Git, GitHub</li>
+						<li><strong>Tools & Environment:</strong> VS Code, IntelliJ IDEA, WebStorm, Postman, Docker</li>
+						<li><strong>Methodologies:</strong> Agile principles, Scrum</li>
+						<li><strong>Soft Skills:</strong> Problem-Solving, Teamwork, Adaptability, Fast Learner,
+							Attention to Detail
+						</li>
+					</ul>
+				</section>
+
+				<!-- CODE EXAMPLE -->
+				<section class="section" id="code">
+					<h2 class="section-title">Code Example</h2>
+					<p class="section-text"><strong>Codewars Task: Find The Parity Outlier</strong></p>
+					<pre class="section-code"><code>
+public class FindOutlier {
+  static int find(int[] integers) {
+    int evenCount = 0;
+    for (int i = 0; i &lt; 3; i++) {
+      if (integers[i] % 2 == 0) evenCount++;
+    }
+    boolean majorityEven = evenCount >= 2;
+    for (int num : integers) {
+      if ((num % 2 == 0) != majorityEven) {
+        return num;
+      }
+    }
+    throw new IllegalArgumentException("No outlier found");
+  }
+}
+  </code></pre>
+					<ul class="section-list">
+						<li><strong>Example 1:</strong> [2, 4, 0, 100, 4, 11, 2602, 36] → <strong>11</strong> (the only
+							odd number)
+						</li>
+						<li><strong>Example 2:</strong> [160, 3, 1719, 19, 11, 13, -21] → <strong>160</strong> (the only
+							even number)
+						</li>
+					</ul>
+				</section>
+
+				<!-- PROJECTS / WORK EXPERIENCE -->
+				<section class="section" id="projects">
+					<h2 class="section-title">Projects</h2>
+					<ol class="section-list">
+						<li>
+							<strong>ExploreWithMe (EWM) Platform</strong><br>
+							<span class="section-text">Developed a highly scalable event organization and discovery platform using a microservice architecture. Modernized an existing monolithic application, preparing it for high loads and enhanced scalability. Key features include event search, organization, request management, user ratings, and analytics.</span><br>
+							<strong>Skills Used:</strong> Java, Spring Boot, Microservices, RESTful API, PostgreSQL,
+							Docker, Git, Maven/Gradle, Unit/Integration Testing.<br>
+							<a href="https://github.com/NikolaiMurtazin/java-plus-graduation" class="section-link"
+							   target="_blank" rel="noopener noreferrer">Repository</a>
+						</li>
+						<li>
+							<strong>Explore With Me (Microservices Version)</strong><br>
+							<span class="section-text">Implemented an event sharing and community-building application designed to connect users for various events. Structured as two distinct microservices, each with its own database: one for core business logic (event management, user interaction) and another for statistics and analytics.</span><br>
+							<strong>Skills Used:</strong> Java, Spring Boot, Microservices, RESTful API, PostgreSQL,
+							JUnit, Maven/Gradle, Git.<br>
+							<a href="https://github.com/NikolaiMurtazin/java-explore-with-me-plus" class="section-link"
+							   target="_blank" rel="noopener noreferrer">
+								Repository</a>
+						</li>
+						<li>
+							<strong>Sharing Service (ShareIt)</strong><br>
+							<span class="section-text">Developed a backend service for a collaborative sharing application, enabling users to list, search for, and rent items. Includes item requests, user reviews, and managing item availability.</span><br>
+							<strong>Skills Used:</strong> Java, Spring Boot, RESTful API, Hibernate, JPA, PostgreSQL,
+							Docker, Lombok, JUnit, Git.<br>
+							<a href="https://github.com/NikolaiMurtazin/java-shareit" class="section-link"
+							   target="_blank" rel="noopener noreferrer">Repository</a>
+						</li>
+						<li>
+							<strong>Film Rate Service (Filmorate)</strong><br>
+							<span class="section-text">Created a RESTful API for a film rating social network: user registration, add films, rate, add friends, interact with other users' ratings, user management, and social interactions.</span><br>
+							<strong>Skills Used:</strong> Java, Spring Boot, RESTful API, Data Validation, JUnit, Git,
+							Maven.<br>
+							<a href="https://github.com/NikolaiMurtazin/java-filmorate" class="section-link"
+							   target="_blank" rel="noopener noreferrer">Repository</a>
+						</li>
+					</ol>
+				</section>
+
+				<!-- EDUCATION -->
+				<section class="section" id="education">
+					<h2 class="section-title">Education</h2>
+					<ul class="section-list">
+						<li>Moscow Aviation Institute — Technology and Automation of Material Processing</li>
+						<li>Moscow University of Finance and Law — State and Municipal Service</li>
+						<li>Yandex Practicum Advanced Java Course</li>
+						<li>Retraining of IT specialists, Application Development (Germany)</li>
+					</ul>
+				</section>
+
+				<!-- LANGUAGES -->
+				<section class="section" id="languages">
+					<h2 class="section-title">Languages</h2>
+					<ul class="section-list">
+						<li>Russian — native</li>
+						<li>German — B2 (actively learning)</li>
+						<li>English — B1 (actively learning)</li>
+					</ul>
+				</section>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<span>© 2025 Nikolai Murtazin</span>
+				<a href="https://github.com/NikolaiMurtazin" target="_blank" rel="noopener noreferrer"
+				   aria-label="Github">
+					<img src="assets/logo/github.svg" alt="GitHub" height="28" style="vertical-align:middle;">
+				</a>
+				<a href="https://rs.school/" target="_blank" rel="noopener noreferrer" aria-label="RS School">
+					<img src="assets/logo/rs-school-logo.svg" alt="RS School" height="28" style="vertical-align:middle;">
+				</a>
+			</div>
+		</footer>
+	</body>
+</html>
