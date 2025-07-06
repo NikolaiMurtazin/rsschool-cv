@@ -1,3 +1,4 @@
 # rsschool-cv
 
-[https://GITHUB-NIKOLAIMURTAZIN.github.io/rsschool-cv/](https://nikolaimurtazin.github.io/rsschool-cv/)
+- [CV в формате Markdown](https://nikolaimurtazin.github.io/rsschool-cv/cv)
+- [Свёрстанная страница CV](https://nikolaimurtazin.github.io/rsschool-cv/)
